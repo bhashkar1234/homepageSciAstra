@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+    margin: 0;
+    padding: 0;
+  }
+  .section {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .heading {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    background-image: linear-gradient(to right, #ffafbd, #ffc3a0);
+    -webkit-background-clip: text;
+    color: transparent;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  .box {
+    flex: 1;
+    min-width: 100px;
+    height: 50px;
+    background-color: hsl(200, 40%, 75%);
+    margin: 5px;
+    padding: 1px;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  .box:hover {
+    transform: scale(1.05);
+  }
+  .box:last-child {
+    background-color: #b8cee7;
+  }
+  .mentor-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .mentor-container1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+    color: #010e03;
+  }
+  .mentor5, .mentor1, .mentor2 {
+    width: calc(33.33% - 20px);
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #eacccc;
+    /* padding: 2PX; */
+    margin: 12px;
+    border-radius: 18px;
+    box-shadow: 0 2px 4px rgba(222, 9, 9, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  .mentor5{
+    width: calc(25.33% - 20px);
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #e5eef0;
+    /* padding: 2PX; */
+    margin: 12px;
+    border-radius: 18px;
+    box-shadow: 0 2px 4px rgba(222, 9, 9, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .mentor5:hover, .mentor1:hover, .mentor2:hover {
+    transform: scale(1.05);
+  }
+  /* .mentor img {
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 50%;
+  } */
+  .mentor-name {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  .mentor-college {
+    color: #666;
+  }
+  .message-button {
+    display: inline-block;
+    background-color: #3498db;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  .message-button:hover {
+    background-color: #267dbf;
+  }
+  .university-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+  }
+  .university {
+    background-color: #eacccc;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(222, 9, 9, 0.1);
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .university:hover {
+    transform: scale(1.05);
+  }
+  .university-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+</style>
+</head>
+<body>
+
+     <!-- first section  -->
+  <div class="section">
+    <div class="heading">Learn from Scientists, Research Scholars from Top Institutes in the World</div>
+   
+    <div class="university-container">
+      <div class="university">
+        <div class="university-name">
+          <img src="cambridgepic.jpeg" alt="Cambridge University Logo"style="width: 150px; height:150px;">
+          <br>Cambridge</div>
+        <i class="fa-solid fa-university"></i>
+      </div>
+      <div class="university">
+        <div class="university-name">
+          <img src="hardwardpic.jpg" alt="Cambridge University Logo"style="width: 150px; height:150px;">
+         <br> Harvard</div>
+        <i class="fa-solid fa-university"></i>
+      </div>
+      <div class="university">
+        <div class="university-name">
+          <img src="MITpic.jpeg" alt="Cambridge University Logo"style="width: 150px; height:150px;">
+         <br>  MIT</div>
+        <i class="fa-solid fa-university"></i>
+      </div>
+      <div class="university">
+        <div class="university-name">
+          <img src="standfordpic.webp" alt="Cambridge University Logo"style="width: 150px; height:150px;">
+         <br> Stanford</div>
+        <i class="fa-solid fa-university"></i>
+      </div>
+      <div class="university">
+        <div class="university-name">
+          <img src="oxford-university.png" alt="Cambridge University Logo"style="width: 150px; height:150px;"><br>Oxford</div>
+        <i class="fa-solid fa-university"></i>
+      </div>
+      <div class="university">
+        <div class="university-name">
+          <img src="standfordpic.webp" alt="Cambridge University Logo"style="width: 150px; height:150px;">
+          <br>ETH Zurich</div>
+        <i class="fa-solid fa-university"></i>
+      </div>
+    </div>
+  </div>
+  
+  <!-- middle section -->
+  <div class="section">
+    <div class="heading">Meet Your Mentors</div>
+    <div class="mentor-container1">
+      <div class="mentor5">
+        <i class="fa-solid fa-user"></i>
+        <div class="mentor-name">Shubham</div>
+        <div class="mentor-college">Cambridge</div>
+        <div>Lorem ipsum dolor sit amet.</div>
+        <button class="message-button">About Him</button>
+      </div>
+      <div class="mentor5">
+        <i class="fa-solid fa-user"></i>
+        <div class="mentor-name">Shesh ram</div>
+        <div class="mentor-college">MMMUT</div>
+        <div>Lorem ipsum dolor sit amet.</div>
+        <button class="message-button">About Him</button>
+      </div>
+      <div class="mentor5">
+        <i class="fa-solid fa-user"></i>
+        <div class="mentor-name">Anil KUMAR</div>
+        <div class="mentor-college">Harvard</div>
+        <div>Lorem ipsum dolor sit amet.</div>
+        <button class="message-button">About Him</button>
+      </div>
+      <div class="mentor5">
+        <i class="fa-solid fa-user"></i>
+        <div class="mentor-name">Abhishek singh</div>
+        <div class="mentor-college">MIT</div>
+        <div>Lorem ipsum dolor sit amet.</div>
+        <button class="message-button">About Him</button>
+      </div>
+      <div class="mentor5">
+        <i class="fa-solid fa-user"></i>
+        <div class="mentor-name">shiv kumar</div>
+        <div class="mentor-college">Oxford</div>
+        <div>Lorem ipsum dolor sit amet.</div>
+        <button class="message-button">About Him</button>
+      </div>
+      <div class="mentor5">
+        <i class="fa-solid fa-user"></i>
+        <div class="mentor-name">ROMAN SAINI</div>
+        <div class="mentor-college">ETH Zurich</div>
+        <div>Lorem ipsum dolor sit amet.</div>
+        <button class="message-button">About Him</button>
+      </div>
+
+    </div>
+  </div>
+  
+
+   <!-- last section -->
+  <div class="section">
+    <div class="heading">Mentors and Advisers</div>
+    <div class="mentor-container">
+      <div class="mentor1">
+        <i class="fa-solid fa-user"></i>
+        <div class="mentor-name">AKHIL TRIPATHI</div>
+        <div class="mentor-college">IIT PATNA <BR>project manager</BR></div>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, sed!</div>
+        <button class="message-button">Message Him Now</button>
+      </div>
+      <div class="mentor2">
+        <i class="fa-solid fa-user"></i>
+        <div class="mentor-name">Dr omkar</div>
+
+        <div class="mentor-college"> IIT MADRAS<br> principal project scientist</div>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, consequuntur.</div>
+        <button class="message-button">Message Him Now</button>
+      </div>
+      <!-- Repeat the above structure for other mentors and advisers -->
+    </div>
+  </div>
+</body>
+</html>
